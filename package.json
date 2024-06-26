@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/src/server.js",
+    "babel": "babel src -d dist",
+    "build": "robocopy . dist /E /XF .vercel /XD node_modules dist /MIR",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
